@@ -49,7 +49,7 @@ export const projectsData = [
     image: '/project-image/project-1.png',
     badge: 'Game Dev',
     tags: ['Game Dev', 'JavaScript', 'Canvas / WebGL', 'Pixel Art'],
-    githubUrl: 'https://github.com/cawleylac',
+    githubUrl: 'https://github.com/cawleylac/2D-Platformer',
     liveUrl: '#connect',
   },
   {
@@ -60,7 +60,7 @@ export const projectsData = [
     image: '/project-image/project3.jpg',
     badge: 'Computer Vision',
     tags: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
-    githubUrl: 'https://github.com/cawleylac',
+    githubUrl: 'https://github.com/cawleylac/handtrack',
     liveUrl: '#connect',
   },
 ];

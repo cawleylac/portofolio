@@ -131,7 +131,7 @@ export default function Connect() {
         {/* Social Icons */}
         <div className="flex items-center justify-center gap-4 mt-10">
           <a
-            href="https://www.linkedin.com/in/aura-marsha-azzila-737371388"
+            href="https://www.linkedin.com/in/aura-marsha-azzila/"
             target="_blank"
             rel="noreferrer"
             className="w-10 h-10 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-all"

@@ -1,9 +1,10 @@
 export const navLinks = [
   { label: 'Projects', href: '#projects' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Certificates', href: '#certificates' },
   { label: 'Skills', href: '#skills' },
   { label: 'About', href: '#about' },
-  { label: 'Contact', href: '#connect' }, 
+  { label: 'Contact', href: '#connect' },
 ];
 
 export const heroData = {
@@ -49,7 +50,7 @@ export const projectsData = [
     image: '/project-image/project-1.png',
     badge: 'Game Dev',
     tags: ['Game Dev', 'JavaScript', 'Canvas / WebGL', 'Pixel Art'],
-    githubUrl: 'https://github.com/cawleylac/2D-Platformer',
+    githubUrl: 'https://github.com/cawleylac',
     liveUrl: '#connect',
   },
   {
@@ -60,7 +61,7 @@ export const projectsData = [
     image: '/project-image/project3.jpg',
     badge: 'Computer Vision',
     tags: ['Python', 'OpenCV', 'MediaPipe', 'Computer Vision'],
-    githubUrl: 'https://github.com/cawleylac/handtrack',
+    githubUrl: 'https://github.com/cawleylac',
     liveUrl: '#connect',
   },
 ];
@@ -120,6 +121,119 @@ export const experienceData = [
   },
 ];
 
+export const certificatesData = [
+  {
+    id: 1,
+    title: 'Top 10 — Clash of Cyber Heist',
+    issuer: 'Telkom Corporate University & Indibiz',
+    date: 'Nov 2025',
+    category: 'Cyber Security',
+    badge: 'Competition Award',
+    image: '/sertifikat/setifikat2.png',
+    skills: ['Cyber Security', 'CTF', 'Problem Solving'],
+    description: 'Penghargaan bergengsi predikat Top 10 ajang kompetisi nasional KID#2 Clash of Cyber Heist.',
+  },
+  {
+    id: 2,
+    title: 'Koding & Kecerdasan Artificial (KKA)',
+    issuer: 'SMK Plus Pelita Nusantara',
+    date: 'Nov 2025',
+    category: 'Artificial Intelligence',
+    badge: 'Mastery Certification',
+    image: '/sertifikat/sertifikat1.jpeg',
+    skills: ['AI for Students', 'Creative Coding', 'Prompting'],
+    description: 'Sertifikasi pelatihan intensif penguasaan teknologi AI untuk software engineering.',
+  },
+  {
+    id: 3,
+    title: 'Cloud Computing di Sektor Pendidikan',
+    issuer: 'LPPM STT Terpadu Nurul Fikri',
+    date: 'Okt 2025',
+    category: 'Cloud Computing',
+    badge: 'Workshop',
+    image: '/sertifikat/sertifikat3.png',
+    skills: ['Cloud Infrastructure', 'Virtualization', 'Networking'],
+    description: 'Sertifikat keikutsertaan penguasaan teknologi komputasi awan dan arsitektur server.',
+  },
+  {
+    id: 4,
+    title: 'The Champions Blueprint to Real-World Scenarios',
+    issuer: 'Linuxhackingid',
+    date: ' Aug 2026',
+    category: 'Cyber Security',
+    badge: 'Certificication',
+    image: '/sertifikat/sertifikat4.png',
+    skills: ['Cyber Security', 'CTF'],
+    description: 'Strategi menguasai kompetisi Capture The Flag (CTF) berdasarkan skenario dunia nyata.',
+  },
+  {
+    id: 5,
+    title: 'AI Ethics in Game Development',
+    issuer: 'CodeLamp',
+    date: 'Sept 2025',
+    category: 'Game Development',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat5.png',
+    skills: ['Game Development', 'AI', 'Game'],
+    description: 'AI & Ethics in Game Development" (Kecerdasan Buatan dan Etika dalam Pengembangan Game).',
+  },
+  {
+    id: 6,
+    title: 'Reconnaissance & Numeration for Bug Bounty',
+    issuer: 'Merdeka Siber',
+    date: 'Dec 2025',
+    category: 'Cyber Security',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat6.png',
+    skills: ['Bug Bounty', 'Cyber Security'],
+    description: 'Teknik reconnaissance dan enumeration untuk program bug bounty.',
+  },
+  {
+    id: 7,
+    title: 'Introduction to Capture the Flag',
+    issuer: 'ID-Networkers',
+    date: 'Aug 2025',
+    category: 'Cyber Security',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat7.png',
+    skills: ['Cyber Security', 'CTF'],
+    description: 'Pengenalan dasar mengenai kompetisi keamanan siber Capture the Flag (CTF) bagi pemula.',
+  },
+  {
+    id: 8,
+    title: 'Game Design : From Hobby to Hook',
+    issuer: 'CodeLamp',
+    date: 'Aug 2025',
+    category: 'Game Development',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat8.png',
+    skills: ['Game Development'],
+    description: 'Strategi merancang retensi dan siklus permainan adiktif agar pemain betah bermain game mini dalam jangka panjang.',
+  },
+  {
+    id: 9,
+    title: 'Web Exploitation CTF : Think, Attack, Capture',
+    issuer: 'Revolusiber',
+    date: 'Dec 2025',
+    category: 'Cyber Security',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat9.png',
+    skills: ['Cyber Security', 'CTF', 'Web Exploitation'],
+    description: 'Teknik eksploitasi keamanan situs web (Web Exploitation) dalam kompetisi keamanan siber Capture the Flag (CTF).',
+  },
+  {
+    id: 10,
+    title: 'Why Your Game Isn`t Selling : Market Validation for Indie Developers',
+    issuer: 'CodeLamp',
+    date: 'Aug 2025',
+    category: 'Game Development',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat10.png',
+    skills: ['Game Development'],
+    description: 'Penyebab kegagalan penjualan game indie serta strategi melakukan validasi pasar dan riset audiens.',
+  },
+];
+
 export const skillsData = [
   {
     category: 'FRONTEND',
@@ -148,11 +262,10 @@ export const footerLinks = {
     { label: 'TrackHand', href: '#projects' },
   ],
   about: [
+    { label: 'Certificates', href: '#certificates' },
     { label: 'Experience', href: '#experience' },
     { label: 'Skills', href: '#skills' },
     { label: 'About', href: '#about' },
     { label: 'Contact', href: '#connect' },
   ],
 };
-
-

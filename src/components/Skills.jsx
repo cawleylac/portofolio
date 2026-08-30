@@ -17,6 +17,14 @@ import {
   SiFigma,
   SiTypescript,
   SiExpo,
+  SiGithub,
+  SiLaravel,
+  SiLaragon,
+  SiVercel,
+  SiKalilinux,
+  SiCss,
+  SiBootstrap,
+  SiPhp,
 } from 'react-icons/si';
 import { IoFlashOutline } from 'react-icons/io5';
 
@@ -33,10 +41,11 @@ const skillsData = [
         { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
         { name: 'React', icon: SiReact, color: '#61DAFB' },
         { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
-        { name: 'Vue.js', icon: SiVuedotjs, color: '#4FC08D' },
+        { name: 'CSS', icon: SiCss, color: '#3178C6' },
+        { name: 'Bootstrap', icon: SiBootstrap, color: '#3178C6' },
       ],
       [
-        { name: 'HTML/CSS', icon: SiHtml5, color: '#E34F26' },
+        { name: 'HTML', icon: SiHtml5, color: '#E34F26' },
         { name: 'Tailwind', icon: SiTailwindcss, color: '#06B6D4' },
       ],
     ],
@@ -50,11 +59,11 @@ const skillsData = [
       [
         { name: 'Python', icon: SiPython, color: '#3776AB' },
         { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-        { name: 'Express', icon: SiExpress, color: '#000000' },
+        { name: 'Laravel', icon: SiLaravel, color: '#F05032' },
+        { name: 'PHP', icon: SiPhp, color: '#7a5acc' },
       ],
       [
         { name: 'SQL', icon: SiPostgresql, color: '#4169E1' },
-        { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
       ],
     ],
   },
@@ -65,13 +74,13 @@ const skillsData = [
     borderColor: 'border-[#16A34A]',
     rows: [
       [
-        { name: 'Docker', icon: SiDocker, color: '#2496ED' },
         { name: 'Expo', icon: SiExpo, color: '#000020' },
         { name: 'Git', icon: SiGit, color: '#F05032' },
         { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
-      ],
-      [
-        { name: 'Agile', icon: IoFlashOutline, color: '#EAB308' },
+        { name: 'Github', icon: SiGithub, color: '#000020' },
+        { name: 'Laragon', icon: SiLaragon, color: '#2496ED' },
+        { name: 'Vercel', icon: SiVercel, color: '#000020' },
+        { name: 'Kali Linux', icon: SiKalilinux, color: '#3776AB' },
       ],
     ],
   },

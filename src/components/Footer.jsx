@@ -13,8 +13,8 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#05182C] text-gray-400 pt-16 pb-12">
-      <div className="max-w-7xl mx-auto px-6 sm:px-10">
+    <footer className="bg-[#05182C] text-gray-400 pt-16 pb-12 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-8 lg:px-10">
         {/* Top Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-14 max-w-6xl mx-auto">
           {/* Projects */}
@@ -60,18 +60,21 @@ export default function Footer() {
             <h4 className="text-xs font-bold text-white tracking-widest mb-3">
               NEWSLETTER SIGNUP
             </h4>
-            <form onSubmit={handleSubscribe} className="bg-white rounded-full p-1 flex items-center shadow-inner max-w-md mb-3">
+            <form
+              onSubmit={handleSubscribe}
+              className="bg-white rounded-full p-1 sm:p-1.5 flex items-center shadow-inner w-full max-w-md mb-3"
+            >
               <input
                 type="email"
                 value={newsletterEmail}
                 onChange={(e) => setNewsletterEmail(e.target.value)}
                 placeholder="Your email address"
                 required
-                className="bg-transparent px-4 py-2 text-xs sm:text-sm text-gray-800 placeholder-gray-400 flex-1 outline-none"
+                className="bg-transparent px-3 sm:px-4 py-2 text-xs sm:text-sm text-gray-800 placeholder-gray-400 min-w-0 flex-1 outline-none"
               />
               <button
                 type="submit"
-                className="bg-[#FFDE17] hover:bg-[#FED136] text-[#1E293B] font-bold text-xs uppercase px-5 sm:px-6 py-2.5 rounded-full transition-all duration-200"
+                className="bg-[#FFDE17] hover:bg-[#FED136] text-[#1E293B] font-bold text-[11px] sm:text-xs uppercase px-4 sm:px-6 py-2 sm:py-2.5 rounded-full transition-all duration-200 flex-shrink-0 whitespace-nowrap cursor-pointer shadow-xs"
               >
                 SUBSCRIBE
               </button>
@@ -114,7 +117,7 @@ export default function Footer() {
           </div>
 
           {/* Large AURA ACA text */}
-          <h2 className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white tracking-widest text-center uppercase leading-none select-none">
+          <h2 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black text-white tracking-wider sm:tracking-widest text-center uppercase leading-none select-none break-words max-w-full">
             THANK YOU!
           </h2>
         </div>
@@ -122,4 +125,3 @@ export default function Footer() {
     </footer>
   );
 }
-

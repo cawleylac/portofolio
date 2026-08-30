@@ -104,7 +104,7 @@ export default function About() {
                 </span>
               </div>
               <p className="text-[9px] sm:text-[11px] text-gray-500 font-medium leading-tight mb-2 sm:mb-3">
-                Pemrograman itu bukan tentang apa yang kamu tahu, tapi tentang apa yang bisa kamu cari tahu.
+                Software engineering is a detailed study of engineering to the design, development, deployment, and maintenance of software application
               </p>
 
               <div className="h-[1px] bg-gray-100 w-full my-1.5 sm:my-2" />

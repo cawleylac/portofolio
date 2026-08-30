@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Certificates from "./components/Certificate";
 import Skills from './components/Skills';
 import Connect from './components/Connect';
 import Footer from './components/Footer';
@@ -36,6 +37,7 @@ function App() {
       </div>
       <Projects />
       <Experience />
+      <Certificates />
       <Skills />
       <Connect />
       <Footer />
@@ -44,8 +46,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-

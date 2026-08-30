@@ -142,7 +142,7 @@ export default function Projects() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1E293B] tracking-tight uppercase mb-4">
-            OUR <span className="text-[#144272]">PROJECTS</span>
+            MY <span className="text-[#144272]">PROJECTS</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-600 font-normal leading-relaxed">
             High-impact software engineering projects, modern web architectures, and scalable applications.

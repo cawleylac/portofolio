@@ -100,7 +100,7 @@ export default function About() {
             >
               <div className="flex items-center justify-between gap-2 mb-1">
                 <span className="text-base sm:text-2xl font-black text-[#1E293B] tracking-tight">
-                  Semangat!
+                Quotes!
                 </span>
               </div>
               <p className="text-[9px] sm:text-[11px] text-gray-500 font-medium leading-tight mb-2 sm:mb-3">

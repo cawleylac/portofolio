@@ -158,7 +158,7 @@ export default function Navbar() {
                 : 'hidden'
                 }`}
             >
-              Contact Us
+              Contact Me
             </a>
 
             {/* Morphing Hamburger Menu (Always accessible for fullscreen overlay or mobile) */}

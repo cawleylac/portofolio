@@ -24,7 +24,7 @@ export const aboutData = {
   role: 'Software Engineer',
   description:
     "A Software Engineering student at SMK Plus Pelita Nusantara with a keen interest in software and web development. Combines technical programming skills with strong soft skills, such as teamwork, discipline, and problem-solving abilities. Eager to continue learning, hone technical competencies, and make meaningful contributions in a professional work environment.",
-  linkedin: 'https://www.linkedin.com/in/aura-marsha-azzila/',
+  linkedin: 'www.linkedin.com/in/aura-marsha-azzila',
   location: 'Jakarta, Indonesia',
   profileImage:
     '/poto2.jpeg',

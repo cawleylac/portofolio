@@ -83,7 +83,7 @@ export default function Footer() {
             {/* Social Icons */}
             <div className="flex items-center gap-3 mt-2">
               <a
-                href="https://www.linkedin.com/in/aura-marsha-azzila/"
+                href="www.linkedin.com/in/aura-marsha-azzila"
                 target="_blank"
                 rel="noreferrer"
                 className="w-9 h-9 rounded-full border border-white/30 hover:border-white bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition-all"

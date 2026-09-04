@@ -228,7 +228,7 @@ export default function Navbar() {
           {/* Social Links */}
           <div className="flex flex-wrap gap-4 sm:gap-6 md:gap-8 mt-6 sm:mt-8 pt-4 border-t border-black/5">
             {[
-              { label: 'LinkedIn', href: 'https://www.linkedin.com/in/aura-marsha-azzila/' },
+              { label: 'LinkedIn', href: 'www.linkedin.com/in/aura-marsha-azzila' },
               { label: 'GitHub', href: 'https://github.com/cawleylac' },
               { label: 'Email', href: 'mailto:m4rshazzila4ura@gmail.com' },
             ].map((social) => (

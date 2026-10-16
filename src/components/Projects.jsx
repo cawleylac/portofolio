@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { BsArrowUpRight, BsCodeSlash, BsLaptop } from 'react-icons/bs';
+import { BsArrowUpRight, BsCodeSlash } from 'react-icons/bs';
 import { projectsData } from '../data/content';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -27,6 +27,14 @@ function ProjectPreview({ project }) {
 }
 
 function ProjectCard({ project }) {
+  // Cek apakah proyek ini adalah game (misal: 2D Platformer Adventure)
+  const isGame = project.title === '2D Platformer Adventure';
+
+  // URL tombol mengarah ke githubUrl jika ada, atau default ke profil github Anda. 
+  // Jika game dan tidak ada code, bisa diatur null atau dibiarkan kosong.
+  const buttonUrl = isGame ? project.githubUrl : (project.githubUrl || 'https://github.com/cawleylac');
+  const buttonText = 'Code';
+
   return (
     <div className="project-card group bg-white rounded-[32px] sm:rounded-[36px] border border-gray-100 p-6 shadow-[0_12px_36px_rgba(0,0,0,0.06)] hover:shadow-[0_24px_50px_rgba(20,66,114,0.12)] hover:-translate-y-2 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
       {/* Top Preview Image */}
@@ -39,14 +47,17 @@ function ProjectCard({ project }) {
             <h3 className="text-xl sm:text-2xl font-black text-[#1E293B] group-hover:text-[#144272] transition-colors">
               {project.title}
             </h3>
-            <a
-              href={project.githubUrl || 'https://github.com/cawleylac'}
-              target="_blank"
-              rel="noreferrer"
-              className="w-8 h-8 rounded-full bg-gray-50 group-hover:bg-[#144272] text-gray-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-2xs"
-            >
-              <BsArrowUpRight className="text-sm font-bold" />
-            </a>
+            {/* Tombol panah atas kanan hanya muncul jika ada URL-nya */}
+            {buttonUrl && (
+              <a
+                href={buttonUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="w-8 h-8 rounded-full bg-gray-50 group-hover:bg-[#144272] text-gray-400 group-hover:text-white flex items-center justify-center transition-all duration-300 shadow-2xs"
+              >
+                <BsArrowUpRight className="text-sm font-bold" />
+              </a>
+            )}
           </div>
           <p className="text-xs sm:text-sm text-[#64748B] leading-relaxed mb-6 font-normal">
             {project.description}
@@ -66,25 +77,25 @@ function ProjectCard({ project }) {
             ))}
           </div>
 
-          {/* Action Button */}
-          <div className="grid grid-cols-1">
-            {/* <a
-              href={project.liveUrl || '#connect'}
-              className="py-3 px-4 rounded-xl sm:rounded-2xl bg-[#144272] text-white hover:bg-[#0D2D52] font-bold text-xs text-center shadow-xs transition-all flex items-center justify-center gap-1.5"
-            >
-              <BsLaptop className="text-sm" />
-              <span>Live Demo</span>
-            </a> */}
-            <a
-              href={project.githubUrl || 'https://github.com/cawleylac'}
-              target="_blank"
-              rel="noreferrer"
-              className="py-3 px-4 rounded-xl sm:rounded-2xl bg-gray-50 hover:bg-gray-100 text-[#1E293B] font-bold text-xs text-center border border-gray-200 transition-all flex items-center justify-center gap-1.5"
-            >
-              <BsCodeSlash className="text-sm" />
-              <span>Code</span>
-            </a>
-          </div>
+          {/* Action Button (Hanya tampilkan jika ada buttonUrl/untuk non-game atau game yang punya link code) */}
+          {buttonUrl ? (
+            <div className="grid grid-cols-1">
+              <a
+                href={buttonUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="py-3 px-4 rounded-xl sm:rounded-2xl font-bold text-xs text-center transition-all flex items-center justify-center gap-1.5 bg-gray-50 hover:bg-gray-100 text-[#1E293B] border border-gray-200"
+              >
+                <BsCodeSlash className="text-sm" />
+                <span>{buttonText}</span>
+              </a>
+            </div>
+          ) : (
+            // Opsi jika game benar-benar tidak memiliki tombol code sama sekali
+            <div className="text-center py-2 text-xs font-medium text-gray-400 italic">
+              
+            </div>
+          )}
         </div>
       </div>
     </div>
@@ -142,7 +153,7 @@ export default function Projects() {
           </div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-[#1E293B] tracking-tight uppercase mb-4">
-            MY <span className="text-[#144272]">PROJECTS</span>
+            OUR <span className="text-[#144272]">PROJECTS</span>
           </h2>
           <p className="text-sm sm:text-base text-gray-600 font-normal leading-relaxed">
             High-impact software engineering projects, modern web architectures, and scalable applications.

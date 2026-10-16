@@ -50,8 +50,6 @@ export const projectsData = [
     image: '/project-image/project-1.png',
     badge: 'Game Dev',
     tags: ['Game Dev', 'JavaScript', 'Canvas / WebGL', 'Pixel Art'],
-    githubUrl: 'https://github.com/cawleylac',
-    liveUrl: '#connect',
   },
   {
     id: 3,
@@ -164,6 +162,7 @@ export const certificatesData = [
     badge: 'Certificication',
     image: '/sertifikat/sertifikat4.png',
     skills: ['Cyber Security', 'CTF'],
+    category: 'Game Development',
     description: 'Strategi menguasai kompetisi Capture The Flag (CTF) berdasarkan skenario dunia nyata.',
   },
   {
@@ -171,7 +170,6 @@ export const certificatesData = [
     title: 'AI Ethics in Game Development',
     issuer: 'CodeLamp',
     date: 'Sept 2025',
-    category: 'Game Development',
     badge: 'Certification',
     image: '/sertifikat/sertifikat5.png',
     skills: ['Game Development', 'AI', 'Game'],
@@ -232,6 +230,17 @@ export const certificatesData = [
     skills: ['Game Development'],
     description: 'Penyebab kegagalan penjualan game indie serta strategi melakukan validasi pasar dan riset audiens.',
   },
+  {
+    id: 11,
+    title: 'From Vision to Version 1.0: Roadmapping Your Game Effectively',
+    issuer: 'CodeLamp',
+    date: 'Aug 2025',
+    category: 'Game Development',
+    badge: 'Certification',
+    image: '/sertifikat/sertifikat11.png',
+    skills: ['Game Development'],
+    description: 'Berfokus pada manajemen dan perencanaan strategis dalam pengembangan game (game development roadmap).',
+  }
 ];
 
 export const skillsData = [

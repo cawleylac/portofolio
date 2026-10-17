@@ -50,6 +50,10 @@ export const projectsData = [
     image: '/project-image/project-1.png',
     badge: 'Game Dev',
     tags: ['Game Dev', 'JavaScript', 'Canvas / WebGL', 'Pixel Art'],
+    githubUrl: '',
+    liveUrl: '/record.mp4',
+    buttonText: 'Live Demo',
+    buttonurl: '/record.mp4',
   },
   {
     id: 3,
